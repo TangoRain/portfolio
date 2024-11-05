@@ -1,10 +1,14 @@
+
 import type { LayoutServerLoad } from "./$types";
+import ini from "$lib/static/init.json"; 
+export const prerender = true;
 
-export const load = (async ({ cookies  }) => {
 
-    let user = cookies.get("hresssdfs")
-
+export const load = (({  }) => {
+    
     return {
-        "islogin":user==null?false: true
+        init:ini
     }
+    
 }) satisfies LayoutServerLoad;
+// ex satisfies PageServerLoad;
