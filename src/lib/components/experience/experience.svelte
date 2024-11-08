@@ -14,13 +14,13 @@ let data = [
     {
     icon:SiFlutter,
     title:"Flutter Developer  (Measoft)",
-    date:"2019-2020",
+    date:"2019-2021",
     describe:"Разработал веб и мобильное приложение для пунктов выдачи заказов. Я использовал Bloc для управления состоянием и Sqflite для локальной базы данных. (В то время веб-версия Flutter была в бета-версии.)",
     },
     {
     icon:SiFlutter,
     title:"Flutter Developer  (BSTR)",
-    date:"2020-2022",
+    date:"2021-2022",
     describe:"Разработал приложение BSTR, используя DIO, Hive, Riverpod и Freeze. Само приложение BSTR предлагает быстрые и удобные варианты оплаты проезда и парковок.",
     },
     {

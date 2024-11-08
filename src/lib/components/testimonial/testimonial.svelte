@@ -18,8 +18,8 @@ let tesimonials = [
 ,    {
     img:avatar,
     title:"Ответственный исполнитель, умеющий работать в команде. Рекомендую Ивана.",
-    name:"Tatiana BSTR",
-    job:" Project ownmer",
+    name:"Mikhail Focus ",
+    job:" CEO webstudio",
 }
 //en
 //     {

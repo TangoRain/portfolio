@@ -1,4 +1,4 @@
-import { H as HYDRATION_ERROR, j as get_next_sibling, k as define_property, l as set_active_reaction, m as set_active_effect, n as is_array, o as active_reaction, q as active_effect, r as init_operations, t as get_first_child, v as HYDRATION_START, w as HYDRATION_END, x as hydration_failed, y as clear_text_content, z as array_from, A as effect_root, B as is_passive_event, C as create_text, D as branch, E as push, F as pop, G as component_context, I as get, J as set, K as flush_sync, L as mutable_source, M as render, c as push$1, N as setContext, p as pop$1 } from "./index.js";
+import { H as HYDRATION_ERROR, l as get_next_sibling, m as define_property, n as set_active_reaction, o as set_active_effect, q as is_array, r as active_reaction, t as active_effect, v as init_operations, w as get_first_child, x as HYDRATION_START, y as HYDRATION_END, z as hydration_failed, A as clear_text_content, B as array_from, C as effect_root, D as is_passive_event, E as create_text, F as branch, G as push, I as pop, J as component_context, K as get, L as set, M as flush_sync, N as mutable_source, O as render, a as push$1, P as setContext, p as pop$1 } from "./index2.js";
 let base = "";
 let assets = base;
 const initial = { base, assets };
@@ -469,7 +469,56 @@ const options = {
   root,
   service_worker: false,
   templates: {
-    app: ({ head, body, assets: assets2, nonce, env }) => '<!doctype html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="' + assets2 + '/favicon.png" />\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		' + head + '\n	</head>\n	<body data-sveltekit-preload-data="hover">\n		<div style="display: contents">' + body + "</div>\n	</body>\n</html>\n",
+    app: ({ head, body, assets: assets2, nonce, env }) => '<!doctype html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="' + assets2 + '/logo.svg" />\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		' + head + `
+		<!-- HTML Meta Tags -->
+<title>Demin Ivan Developer</title>
+<meta name="description" content="Разработчик веб, мобильных и десктопных приложений. Full-stack web developer">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://portfolio-5339a.web.app/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Demin Ivan Developer">
+<meta property="og:description" content="Разработчик веб, мобильных и десктопных приложений. Full-stack web developer">
+<meta property="og:image" content="https://opengraph.b-cdn.net/production/images/7d0d89b9-7558-42ef-8b6d-214637af60d4.svg?token=wYi_iupabzE1Ak_HQdZwo4S9JpIqruETgB2Y4G_eBXU&height=332&width=343&expires=33266798233">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="portfolio-5339a.web.app">
+<meta property="twitter:url" content="https://portfolio-5339a.web.app/">
+<meta name="twitter:title" content="Demin Ivan Developer">
+<meta name="twitter:description" content="Разработчик веб, мобильных и десктопных приложений. Full-stack web developer">
+<meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/7d0d89b9-7558-42ef-8b6d-214637af60d4.svg?token=wYi_iupabzE1Ak_HQdZwo4S9JpIqruETgB2Y4G_eBXU&height=332&width=343&expires=33266798233">
+
+<!-- Meta Tags Generated via https://www.opengraph.xyz -->
+ <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+	(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+	m[i].l=1*new Date();
+	for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+	k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+	ym(98859903, "init", {
+		 clickmap:true,
+		 trackLinks:true,
+		 accurateTrackBounce:true
+	});
+ <\/script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/98859903" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<script>
+				document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click',  (e) => {
+                e.preventDefault();
+                document.querySelector((this).getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+		<\/script>
+		<div style="display: contents">` + body + "</div>\n	</body>\n</html>\n",
     error: ({ status, message }) => '<!doctype html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
@@ -541,7 +590,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "16ii3x1"
+  version_hash: "br1w6p"
 };
 async function get_hooks() {
   return {};

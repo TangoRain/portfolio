@@ -14,14 +14,14 @@
   },
   "_index.js": {
     "file": "chunks/index.js",
-    "name": "index"
+    "name": "index",
+    "imports": [
+      "_index2.js"
+    ]
   },
   "_index2.js": {
     "file": "chunks/index2.js",
-    "name": "index",
-    "imports": [
-      "_index.js"
-    ]
+    "name": "index"
   },
   "_init.js": {
     "file": "chunks/init.js",
@@ -31,7 +31,7 @@
     "file": "chunks/internal.js",
     "name": "internal",
     "imports": [
-      "_index.js"
+      "_index2.js"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte": {
@@ -40,7 +40,7 @@
     "src": "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index2.js",
       "_exports.js"
     ]
   },
@@ -50,7 +50,7 @@
     "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js",
     "isEntry": true,
     "imports": [
-      "_index.js",
+      "_index2.js",
       "_internal.js",
       "_exports.js"
     ]
@@ -118,11 +118,11 @@
     "src": "src/routes/+layout.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
-      "_index2.js"
+      "_index2.js",
+      "_index.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout.M6tLu3vn.css"
+      "_app/immutable/assets/_layout.S49rtIYx.css"
     ]
   },
   "src/routes/+page.server.ts": {
@@ -137,8 +137,8 @@
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
       "_index2.js",
+      "_index.js",
       "_init.js"
     ],
     "css": [

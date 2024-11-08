@@ -8,45 +8,45 @@ import omoservice from "$lib/static/images/portfolio/omoservice.jpeg";
 import pranamat from "$lib/static/images/portfolio/pranamat.jpeg";
 import  measoft from "$lib/static/images/portfolio/pvz.jpeg";
 
-    let portfolio = [
+   export let portfolio = [
         {
             title:"Boson, Loyalty program",
-            desc:"Приложение для подключения программ лояльности в разных магазинах..", 
+            desc:"Приложение для подключения программ лояльности в разных магазинах. <br> Разработка велась командой из трех человек. <br> Стек: <br> Futter \n + Firebase <br> Bloc + DIO <br> Python (fastAPI) + Postres", 
             img:bsom
         },
         {
             title:"BSTR, Транспорт Петербурга",
-            desc:"Приложение для покупки платных парковок в Санкт-Петербурге и обновления проездных билетов..", 
+            desc:"Приложение для покупки платных парковок в Санкт-Петербурге и обновления проездных билетов. <br> Работа в компании BSTR, позиция - Flutter Lead. <br> Стек: <br> Flutter + Supabase <br> Riverpod + DIO <br><br> backend: Python <br> VK/Yandex auth", 
             img:bstr
         },
         {
             title:"Chari, благотворительный фонд",
-            desc:"Charity — это благотворительный фонд неравнодушных людей, специализирующийся на различных видах помощи нуждающимся.", 
+            desc:"Chari — это благотворительный фонд неравнодушных людей, специализирующийся на различных видах помощи нуждающимся. <br> Разработчик Full-stack. <br> Стек: <br> Мобильная версия: Flutter <br>  Riverpod/Dio/Freeze <br><br>  Web версия : Svelte <br> Prisma/Logger/Storybook <br><br> Сервер: FastAPI <br> <br> База данных : Mongo <br><br>CMS:  Strapi <br>    ", 
             img:chari
         },
         {
             title:"FriFri- ერთად შემოვიაროთ მსოფლიო!",
-            desc:"FriFri — это промежуточный сервис между GE и Aviasales.", 
+            desc:"FriFri — это промежуточный сервис между GE и Aviasales.  <br> Разработчик Full-stack. <br> Стек: <br> Мобильная версия: Flutter <br>  Riverpod/Dio/Freeze <br><br>  Web версия : Svelte <br> Prisma/Logger/Storybook <br><br> Сервер: FastAPI + GraphQL <br> <br> База данных : Postgres <br><br>CMS:  Strapi <br>     ", 
             img:frifri
         },
         {
             title:"Insight - Медитации и метафорические карты",
-            desc:"Insight Box — это сервис, предлагающий медитации, аффирмации и метафорические карты в одном приложении.", 
+            desc:"Insight Box — это сервис, предлагающий медитации, аффирмации и метафорические карты в одном приложении.  <br> Разработчик Full-stack. <br> Стек: <br> Мобильная версия: Flutter <br>  Riverpod/Dio <br><br>  Web версия : Flutter<br><br> Сервер: Alfred <br> <br> База данных : Postgres ", 
             img:insight
         },
         {
             title:"Omoservice -Marketplace delivery orders",
-            desc:"Omoservice — это платформа, где можно покупать заказы и выполнять их без посредников и комиссий.", 
+            desc:"Omoservice — это платформа, где можно покупать заказы и выполнять их без посредников и комиссий.  <br> Разработчик Full-stack. <br> Стек: <br> Web версия : Svelte <br> Prisma/Logger/Storybook <br><br> Сервер: FastAPI <br> <br> База данных : Mongo <br><br>CMS:  Strapi <br>    ", 
             img:omoservice
         },
         {
             title:"Pranamat",
-            desc:"Pranamat — это приложение, предлагающее медитации и умиротворение в одном месте.", 
+            desc:"Pranamat — это приложение, предлагающее медитации и умиротворение в одном месте. <br>  Flutter Lead. <br> Стек: <br> Flutter + firebase <br> Riverpod/DIO/Lottie <br> ", 
             img:pranamat
         },
         {
             title:"Measoft",
-            desc:"Приложение для пунктов выдачи заказов от Measoft.", 
+            desc:"Приложение для пунктов выдачи заказов от Measoft.  <br> Разработчик Flutter. <br> Стек: <br> Мобильная версия: Flutter <br><br> Web версия : Flutter Web <br> <br> Flutter: Dio/Riverpod/Hive/Freeze <br><br> Сервер: PHP    ", 
             img:measoft
         },
         // {
@@ -113,7 +113,7 @@ import  measoft from "$lib/static/images/portfolio/pvz.jpeg";
             </div>
             <div class="flex-1 flex flex-col  text-start  gap-2 px-5  order-2">
                 <h3 class="text-2xl" >{p.title}</h3>
-                <p class="text-sm text-zinc-500">{p.desc}</p>
+                <p class="text-sm text-zinc-500">{@html p.desc}</p>
             </div>
             </div>
         </div>

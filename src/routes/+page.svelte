@@ -9,16 +9,7 @@ import init from "$lib/static/init.json";
 	import Testimonial from '$lib/components/testimonial/testimonial.svelte';
 	import { browser } from '$app/environment';
 
-	if(browser){
-		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click',  (e) => {
-                e.preventDefault();
-                document.querySelector((this).getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-	}
+	
 </script>
 
 <Wellcome bodyText={init.ru_wellcome}></Wellcome>
@@ -26,7 +17,7 @@ import init from "$lib/static/init.json";
 
 <div class="h-4"></div>
 <Experience></Experience>
-<AboutMe></AboutMe>
+<AboutMe ></AboutMe>
 <div class=" h-5"></div>
 <Projects></Projects>
 <Testimonial></Testimonial>

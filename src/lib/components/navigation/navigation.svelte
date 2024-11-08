@@ -15,20 +15,20 @@ import type { NavigationModel } from "./model";
 </script>
 
 <div class={`w-full h-16 overflow-hidden flex flex-col bg-white shadow-sm  p-4 transition-all duration-200 md:px-20  md:flex-row ${collapsed? " h-72":""}`}>
-    <div class="flex flex-row items-center text-2xl uppercase font-semibold gap-2 ">
+    <a href="#main" class="flex flex-row items-center text-2xl uppercase font-semibold gap-2 ">
     <img class=" h-10" src={model.icon} alt="portfolio icon" srcset="">
     <p class=" w-full text-center">Demin</p>
  <button on:click={()=>{
     collapsed = !collapsed;
     }} class=" md:hidden"> <Icon size=40 src={BiMenu}></Icon></button>
     
-    </div>
+</a>
     <div class={`flex flex-col flex-1 gap-3  justify-center  transition-all duration-200 items-center text-lg font-medium md:opacity-100 md:flex-row  ${collapsed? " opacity-100 " :" opacity-0"}`}>
-        <a href="#about">
-            {model.aboutMe}
-        </a>
         <a href="#skill">
             {model.skills}
+        </a>
+        <a href="#about">
+            {model.aboutMe}
         </a>
         <a href="#project">
             {model.project}

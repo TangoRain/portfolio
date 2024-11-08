@@ -2,7 +2,10 @@
   import "../app.css";
   import Navigation from './../lib/components/navigation/navigation.svelte';
     import logo from "$lib/static/images/logo.svg";
+	import { MetaTags } from "svelte-meta-tags";
+  
     export let data;
+
 data.init.ru_nav.icon = logo; 
 
 </script>
@@ -21,6 +24,20 @@ data.init.ru_nav.icon = logo;
 <link rel="icon" href={logo} />
 <title>Demin portfolio</title>
 </svelte:head>
+<MetaTags
+title="Demin Portfolio"
+description="Сайт портфолио разработчика "
+
+openGraph={{
+      title: 'Demin Ivan Developer',
+    description: 'Разработчик мобильных и веб приложений, разработчик веб сайтов',
+    images:[
+      {
+        url:"https://plfukaeerhozeefmisde.supabase.co/storage/v1/object/public/portfolio/ill.svg?"
+      }
+    ]
+}}
+></MetaTags>
 
 <footer class="w-full bg-black px-20 py-10 text-white flex flex-row text-xl">
 <p>DEMIN portfolio</p> <div class="flex-1"></div> <a class="text" href="mailto:1ingego1@gmail.com">1ingego1@gmail.com</a>

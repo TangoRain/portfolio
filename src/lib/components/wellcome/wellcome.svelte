@@ -27,10 +27,10 @@
     }
 </style>
 
-<div class="w-full flex flex-col px-4 py-10 items-center gap-8 md:flex-row md:p-20 ">
+<div id="main" class="w-full flex flex-col px-4 py-10 items-center gap-8 md:flex-row md:p-20 ">
 
     <div class="md:flex-[1] md:order-2"> <img class={`w-full   md:flex-1`} src={img} alt="preview" on:load={()=> {}}></div>
 
-   <div class="flex flex-col gap-8 md:flex-[1] md:order-1"> <h1 class="text-3xl md:text-5xl">{hello} <span  class="font-semibold">{name} <br><span class="dev" > {wamdm}</span> </span> {bassed} <span class=" font-semibold "> {loc} </span></h1>
+   <div class="flex flex-col gap-8 md:flex-[1] md:order-1"> <h1 class="text-2xl md:text-5xl">{hello} <span  class="font-semibold">{name} <br><span class="dev" > {wamdm}</span> </span> {bassed} <span class=" font-semibold "> {loc} </span></h1>
     <p class=" text-zinc-500 text-sm md:text-base">{bodyText}</p></div>
 </div>

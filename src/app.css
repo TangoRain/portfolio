@@ -6,3 +6,7 @@
 body{
     font-family:"Ubuntu";
 }
+html{
+    scroll-behavior: smooth;
+
+}
